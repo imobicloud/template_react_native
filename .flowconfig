@@ -1,0 +1,15 @@
+[ignore]
+
+.*/node_modules/react-native-tab-view/.*
+.*/node_modules/react-native/.*
+.*/node_modules/react-navigation/.*
+
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+
+[strict]
