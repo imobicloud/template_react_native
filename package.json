@@ -16,7 +16,6 @@
 		"react-navigation": "^1.0.0-beta.21",
 		"react-redux": "^5.0.6",
 		"redux": "^3.7.2",
-		"redux-logger": "^3.0.6",
 		"redux-thunk": "^2.2.0"
 	},
 	"devDependencies": {
@@ -27,7 +26,8 @@
 		"flow-bin": "^0.59.0",
 		"jest": "21.2.1",
 		"react-test-renderer": "16.0.0",
-		"redux-devtools": "^3.4.1"
+		"redux-devtools": "^3.4.1",
+		"redux-logger": "^3.0.6"
 	},
 	"jest": {
 		"preset": "react-native"
