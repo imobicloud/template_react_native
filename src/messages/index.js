@@ -22,6 +22,7 @@ import * as React from 'react'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
+import Messages from '../i18n'
 import * as actions from './actions'
 // import { updateGlobals } from '../globals/actions'
 
@@ -29,6 +30,8 @@ import type { TA_GetData } from './actions'
 import type { TS_Messages } from './reducer'
 // import type { TA_UpdateGlobals } from '../globals/actions'
 // import type { TS_Globals } from '../globals/reducer'
+
+const _M = Messages.Messages
 
 // == CONTAINER
 
@@ -73,7 +76,7 @@ class TabsContainer extends React.Component<T_Props> {
             {/* header */}
             <Header>
                 <Left/>
-                <Body><Text>Messages</Text></Body>
+                <Body><Text>{_M.title}</Text></Body>
                 <Right>
                     <Button transparent>
                         <Icon name='more'/>

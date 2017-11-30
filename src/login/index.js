@@ -23,6 +23,7 @@ import type {
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
+import Messages from '../i18n'
 import * as actions from './actions'
 // import { updateGlobals } from '../globals/actions'
 
@@ -30,6 +31,8 @@ import type { TA_Login } from './actions'
 import type { TS_Login } from './reducer'
 // import type { TA_UpdateGlobals } from '../globals/actions'
 // import type { TS_Globals } from '../globals/reducer'
+
+const _M = Messages.Login
 
 // == CONTAINER
 
@@ -75,7 +78,7 @@ class LoginContainer extends React.Component<T_Props> {
             {/* header */}
             <Header>
                 <Left/>
-                <Body><Text>Login</Text></Body>
+                <Body><Text>{_M.title}</Text></Body>
                 <Right>
                     <Button transparent>
                         <Icon name='more'/>
@@ -90,7 +93,7 @@ class LoginContainer extends React.Component<T_Props> {
             {/* footer */}
             <Footer>
                 <Button rounded onPress={this.login.bind(this)}>
-                    <Text>Log in</Text>
+                    <Text>{_M.buttonLogin}</Text>
                 </Button>
             </Footer>
 
