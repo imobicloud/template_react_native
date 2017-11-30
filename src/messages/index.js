@@ -28,12 +28,12 @@ import * as actions from './actions'
 import type { TA_GetData } from './actions'
 import type { TS_Messages } from './reducer'
 // import type { TA_UpdateGlobals } from '../globals/actions'
-// import type { TD_Globals } from '../globals/reducer'
+// import type { TS_Globals } from '../globals/reducer'
 
 // == CONTAINER
 
 type T_Props = {
-    // globals: TD_Globals,
+    // globals: TS_Globals,
     messages: TS_Messages,
     // navigation: NavigationScreenProp<NavigationRoute, NavigationAction>,
     // navigationState: NavigationState,

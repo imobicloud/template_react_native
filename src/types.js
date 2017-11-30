@@ -15,10 +15,10 @@ export type T_Error = {
 
 // == GLOBALS
 
-import type { TD_Globals } from './globals/reducer'
+import type { TS_Globals } from './globals/reducer'
 
 type TA_Globals =
-{ type: 'GLOBALS.UPDATE', data: TD_Globals }
+{ type: 'GLOBALS.UPDATE', data: TS_Globals }
 
 // == HOME
 

@@ -29,12 +29,12 @@ import * as actions from './actions'
 import type { TA_Login } from './actions'
 import type { TS_Login } from './reducer'
 // import type { TA_UpdateGlobals } from '../globals/actions'
-// import type { TD_Globals } from '../globals/reducer'
+// import type { TS_Globals } from '../globals/reducer'
 
 // == CONTAINER
 
 type T_Props = {
-    // globals: TD_Globals,
+    // globals: TS_Globals,
     login: TS_Login,
     navigation: NavigationScreenProp<NavigationRoute, NavigationAction>,
     // navigationState: NavigationState,
