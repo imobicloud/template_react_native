@@ -5,6 +5,7 @@ import { TabNavigator, TabBarBottom } from 'react-navigation'
 
 import Home from './home'
 import Messages from './messages'
+import { colors } from './styles'
 
 // https://reactnavigation.org/docs/navigators/tab
 export default TabNavigator(
@@ -19,7 +20,7 @@ export default TabNavigator(
         lazy: false,
         tabBarOptions: {
             // activeBackgroundColor: '#ffffff', // ios
-            activeTintColor: '#e91e63',
+            activeTintColor: colors.primary,
             // allowFontScaling: true,
             // iconStyle: {}, // android
             // inactiveBackgroundColor: '#ffffff', // ios

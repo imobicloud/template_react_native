@@ -16,8 +16,7 @@ import * as React from 'react'
 // import type {
 //     NavigationAction,
 //     NavigationRoute,
-//     NavigationScreenProp,
-//     NavigationState
+//     NavigationScreenProp
 // } from 'react-navigation/src/TypeDefinition'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
@@ -39,7 +38,6 @@ type T_Props = {
     // globals: TS_Globals,
     messages: TS_Messages,
     // navigation: NavigationScreenProp<NavigationRoute, NavigationAction>,
-    // navigationState: NavigationState,
     getData: TA_GetData,
     // updateGlobals: TA_UpdateGlobals
 }
@@ -49,7 +47,7 @@ class TabsContainer extends React.Component<T_Props> {
     // https://reactnavigation.org/docs/navigators/tab#Screen-Navigation-Options
     static navigationOptions = {
         tabBarIcon: ({ tintColor }) => {
-            return <Icon name='chatboxes'
+            return <Icon name='message-text'
                 style={{ color: tintColor, fontSize: 27 }}
             />
         },
@@ -63,8 +61,7 @@ class TabsContainer extends React.Component<T_Props> {
     render() {
         const {
             // globals,
-            // navigation: { navigate },
-            // navigationState: { index },
+            // navigation: { navigate, state: { params } },
             messages: {
                 data: { messages },
                 ui: { fetching, error }
@@ -79,7 +76,7 @@ class TabsContainer extends React.Component<T_Props> {
                 <Body><Text>{_M.title}</Text></Body>
                 <Right>
                     <Button transparent>
-                        <Icon name='more'/>
+                        <Icon name='dots-horizontal'/>
                     </Button>
                 </Right>
             </Header>

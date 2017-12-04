@@ -17,8 +17,7 @@ import * as React from 'react'
 import type {
     NavigationAction,
     NavigationRoute,
-    NavigationScreenProp,
-    // NavigationState
+    NavigationScreenProp
 } from 'react-navigation/src/TypeDefinition'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
@@ -40,7 +39,6 @@ type T_Props = {
     // globals: TS_Globals,
     login: TS_Login,
     navigation: NavigationScreenProp<NavigationRoute, NavigationAction>,
-    // navigationState: NavigationState,
     // updateGlobals: TA_UpdateGlobals,
     userLogin: TA_Login
 }
@@ -69,8 +67,7 @@ class LoginContainer extends React.Component<T_Props> {
                 data: { login },
                 ui: { fetching, error }
             },
-            // navigation: { navigate }
-            // navigationState: { index },
+            // navigation: { navigate, state: { params } }
         } = this.props
 
         return <Container>

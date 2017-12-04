@@ -49,3 +49,30 @@ npm install -g flow-typed
 ```
 flow-typed install [module_name]@[module_version]
 ```
+
+-----------------------------------
+# NATIVEBASE
+
+## Error: Unrecognized font family, run
+
+```
+react-native link react-native-vector-icons
+```
+
+clean and run again
+
+## Remove NativeBase
+
+search for 'native-base' and remove all of them
+
+### Remove native-base codes
+
+### Uninstall NativeBase
+
+```
+react-native unlink react-native-vector-icons
+react-native unlink native-base
+npm uninstall native-base
+```
+
+clean and run again
