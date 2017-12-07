@@ -76,3 +76,30 @@ npm uninstall native-base
 ```
 
 clean and run again
+
+-----------------------------------
+# MAP
+
+Tutorials
+- https://codeburst.io/react-native-google-map-with-react-native-maps-572e3d3eee14
+
+## Error: Yoga not match
+
+Edit Podfile, change this
+
+```
+pod 'Yoga', :path => '../node_modules/react-native/ReactCommon/yoga/Yoga.podspec'
+```
+
+to this (Lowercase yoga)
+
+```
+pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga/Yoga.podspec'
+```
+
+## Error: Property 'cameraTargetBounds' not found on object of type 'AIRGoogleMap *'
+
+https://github.com/react-community/react-native-maps/issues/1836
+
+## Error: CFBundleIdentifier
+
