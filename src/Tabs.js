@@ -17,23 +17,23 @@ export default TabNavigator(
     {
         animationEnabled: true,
         initialRouteName: 'Home',
-        lazy: false,
+        lazy: true,
         tabBarOptions: {
             // activeBackgroundColor: '#ffffff', // ios
             activeTintColor: colors.primary,
             // allowFontScaling: true,
-            // iconStyle: {}, // android
+            iconStyle: { width: 60, height: 36 }, // android
             // inactiveBackgroundColor: '#ffffff', // ios
-            inactiveTintColor: '#cccccc',
+            inactiveTintColor: '#7c7c7c',
             // indicatorStyle: {}, // android
             // labelStyle: {},
             // pressColor: '#e91e63', // android
-            scrollEnabled: true, // android
+            // scrollEnabled: true, // android
             showIcon: true,
             showLabel: false,
-            style: { backgroundColor: '#F5F1FF' },
+            style: { backgroundColor: '#f6f6f6', borderTopColor: '#d9d9d9', borderTopWidth: StyleSheet.hairlineWidth },
             // tabStyle: {},
-            upperCaseLabel: false // android
+            // upperCaseLabel: false // android
         },
         tabBarPosition: 'bottom',
         swipeEnabled: false

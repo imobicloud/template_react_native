@@ -22,6 +22,7 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
 import Messages from '../i18n'
+import IconBadge from '../components/IconBadge'
 import * as actions from './actions'
 // import { updateGlobals } from '../globals/actions'
 
@@ -47,9 +48,8 @@ class TabsContainer extends React.Component<T_Props> {
     // https://reactnavigation.org/docs/navigators/tab#Screen-Navigation-Options
     static navigationOptions = {
         tabBarIcon: ({ tintColor }) => {
-            return <Icon name='message-text'
-                style={{ color: tintColor, fontSize: 27 }}
-            />
+            return <IconBadge count={5}
+                icon='message-text' iconStyle={{ color: tintColor, fontSize: 27 }} />
         },
         tabBarLabel: 'Messages'
     }
