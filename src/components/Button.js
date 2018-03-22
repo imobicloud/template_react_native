@@ -24,7 +24,7 @@ class Button extends React.Component<T_Props> {
 
         let headerRight
         if (fetching) {
-            headerRight = <View style={styles.button}>
+            headerRight = <View style={[styles.button, style]}>
                 <ActivityIndicator color='#fff'/>
             </View>
         } else {
@@ -39,10 +39,10 @@ class Button extends React.Component<T_Props> {
 }
 
 const styles = StyleSheet.create({
-    button: { marginHorizontal: 16, backgroundColor: colors.primary,
+    button: { height: 36, marginHorizontal: 16, backgroundColor: colors.primary,
         borderRadius: 3, alignItems: 'center', justifyContent: 'center'
     },
-    buttonTitle: { marginTop: 5, marginBottom: 7, color: '#fff' }
+    buttonTitle: { color: '#fff' }
 })
 
 export default Button
