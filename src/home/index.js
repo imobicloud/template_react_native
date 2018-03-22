@@ -17,7 +17,7 @@ import * as React from 'react'
 //     NavigationAction,
 //     NavigationRoute,
 //     NavigationScreenProp
-// } from 'react-navigation/src/TypeDefinition'
+// } from 'react-navigation'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 
