@@ -14,9 +14,8 @@ import {
 import * as React from 'react'
 // import { StyleSheet } from 'react-native'
 // import type {
-//     NavigationAction,
-//     NavigationRoute,
-//     NavigationScreenProp
+//     NavigationScreenProp,
+//     NavigationState
 // } from 'react-navigation'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
@@ -38,7 +37,8 @@ const _M = Messages.Messages
 type T_Props = {
     // globals: TS_Globals,
     messages: TS_Messages,
-    // navigation: NavigationScreenProp<NavigationRoute, NavigationAction>,
+    // navigation: NavigationScreenProp<*>,
+    // navigationState: NavigationState,
     getData: TA_GetData,
     // updateGlobals: TA_UpdateGlobals
 }

@@ -15,9 +15,8 @@ import {
 import * as React from 'react'
 // import { StyleSheet } from 'react-native'
 import type {
-    NavigationAction,
-    NavigationRoute,
-    NavigationScreenProp
+    NavigationScreenProp,
+    // NavigationState
 } from 'react-navigation'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
@@ -38,7 +37,8 @@ const _M = Messages.Login
 type T_Props = {
     // globals: TS_Globals,
     login: TS_Login,
-    navigation: NavigationScreenProp<NavigationRoute, NavigationAction>,
+    navigation: NavigationScreenProp<*>,
+    // navigationState: NavigationState,
     // updateGlobals: TA_UpdateGlobals,
     userLogin: TA_Login
 }
